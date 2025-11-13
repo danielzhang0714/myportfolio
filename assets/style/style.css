@@ -1,10 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0f151f;
   font-family: 'Times New Roman', Times, serif;
   color: #222;
 }
 /* font size */
-.hero-banner {
+.hero-banner, .socialmedia{
   font-size: 50px;
 }
 
@@ -16,6 +20,10 @@ h3{
   font-size: 40px;
 }
 
+.copyright, .backtotop{
+  font-size: 30px;
+}
+
 /* herobanner */
 .hero-banner {
   position: relative;
@@ -23,7 +31,7 @@ h3{
   background-size: cover;
   margin: 0 0 50px 0;;
   padding: 100px;
-  height: 600px;
+  height: 700px;
   text-align: center;
   color: #a5ec0c;
 }
@@ -103,4 +111,49 @@ h3{
 .projectOne {
   width: 300px;
   height: 200px;
+}
+
+/* about me */
+.aboutme {
+  text-align: center;
+  color: #82ffc1;
+}
+
+/* contact me */
+.contactme {
+  text-align: center;
+  color: #8282ff;
+}
+
+/* footer */
+.socialmedia {
+  text-align: center;
+  margin: 40px;
+}
+
+.copyright {
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.backtotop a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.backtotop a:hover {
+  transform: scale(1.05);
+  color: #0099ff;
+  background-color: #ffa500;
+  padding: 10px;
+  border-radius: 50%;
 }
