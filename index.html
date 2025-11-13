@@ -8,12 +8,13 @@
         <meta name="keywords" content="html, css, web development, javascript">
         <link rel="icon" href="./assets/media/cobweb.png" type="image/x-icon"> 
         <link rel="stylesheet" href="./assets/style/style.css" media="all"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <title>My Portfolio</title>
         <script src="./assets/script/app.js" defer></script>
         <!-- Links to font awesome, Google fonts, etc. -->
     </head>
     <body>
-      <header>
+      <header id="top">
         <div class="hero-banner">
           <h1>Welcome to my Portfolio!</h1>
           <p>I'm Daniel Zhang, a software development student at MITT (Manitoba Institute of Trades and Technology). </p>
@@ -23,23 +24,49 @@
         <div class="works">
           <h2>My projects</h2>
         </div>
+        <div class="project-container">
+          <div class="projectOne">
+            <img src="./assets/media/" alt="project1 img">
+            <h3>Shape Factory App</h3>
+            <p>A javascript based website that generates different coloured shapes.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
         <div class="aboutme">
           <h2>About Me</h2>
-          <section>
+          <div class="aboutme-container">
+            <div>
             <h3>Past experience</h3>
-            <p>I graduateed as Visual Artist in Brock University in 2024. I am passionated to explore new things.</p>
+            <p>I graduated as a Visual Artist from Brock University in 2024. My background in visual design helps me approach software development with creativity, attention to detail, and a strong sense of layout and user experience. I love exploring new fields and learning new skills.</p>
+            </div>
+            <div>
             <h3>Current working progress</h3>
-            <p>I'm studying at MITT as a software developer rightnow. I’m passionate about building responsive web apps, designing clean UI layouts, and improving my problem-solving skills through real projects.
-Outside of coding, I’m also a competitive FPS player who loves optimizing performance both in-game and in code.</p>
-          </section>
+            <p>I’m currently studying Software Development at MITT. I focus on building responsive web applications, writing clean and maintainable code, and improving my problem-solving abilities through hands-on projects.
+            Outside of coding, I’m also a competitive FPS gamer who enjoys optimizing performance—both in-game and in the way I approach programming challenges.</p>
+            </div>
+            </div>
         </div>
         <div class="contactme">
           <h2>Contact Me</h2>
+          <form class="form">
           <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
+          <input type="email" placeholder="Email">
           <textarea name="message" placeholder="message" rows="4" cols="50"></textarea>
+          <button type="submit">Submit</button>
+          </form>
         </div>
       </main>
-      <footer class="socialmedia"></footer>
+      <footer class="socialmedia">
+        <div class="socialmedia">
+        <a href="http://github.com/danielzhang0714" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/daniel-zhang-9b9aa7226/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://traceless0714.wixsite.com/my-site-1" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        </div>
+
+        <p>&copy; 2025 Daniel Zhang. All rights reserved.</p>
+        <div class="backtotop">
+          <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </footer>
     </body>
 </html>
