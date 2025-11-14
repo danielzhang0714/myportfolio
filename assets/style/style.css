@@ -61,6 +61,7 @@ h3{
 }
 
 .hero-banner h1 {
+  padding-top: 200px;
   color: #a5ec0c;
 }
 
@@ -288,5 +289,103 @@ h3{
   100% {
     border: 1px inset #ff9999;
     box-shadow: 2px 2px 6px #e5ff00;
+  }
+}
+
+
+
+/* responsiveness */
+
+@media (max-width: 1679px) {
+  .hero-banner h1 { 
+    padding-top: 150px; 
+  }
+  .hero-banner {
+    font-size: 45px; 
+    padding: 80px; 
+    height: 600px; 
+  }
+  h2 { 
+    font-size: 40px; 
+  }
+  h3 { 
+    font-size: 35px; 
+  }
+  p { 
+    font-size: 26px; 
+  }
+  .copyright, .backtotop { 
+    font-size: 26px; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-banner h1 { 
+    padding-top: 120px; 
+  }
+
+  .hero-banner, .socialmedia { 
+    font-size: 35px; 
+  }
+  h2 { 
+    font-size: 32px; 
+  }
+  h3 { 
+    font-size: 28px; 
+  }
+  .copyright, .backtotop { 
+    font-size: 24px; 
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-banner h1 { 
+    padding-top: 80px; 
+  }
+
+  .hero-banner, .socialmedia { 
+    font-size: 30px; 
+  }
+  h2 { 
+    font-size: 28px; 
+  }
+  h3 { 
+    font-size: 24px; 
+  }
+  .copyright, .backtotop { 
+    font-size: 22px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner h1 { 
+    padding-top: 0; 
+  }
+
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 10px; 
+    overflow: hidden;
+  }
+
+  .hero-banner, .socialmedia { 
+    font-size: 24px; 
+  }
+  h2 { 
+    font-size: 22px; 
+  }
+  h3 { 
+    font-size: 20px; 
+  }
+  .copyright, .backtotop { 
+    font-size: 20px; 
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    overflow-x: hidden;
   }
 }
