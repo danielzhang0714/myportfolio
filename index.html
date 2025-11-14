@@ -16,6 +16,11 @@
     <body>
       <header id="top">
         <div class="hero-banner">
+          <div class="menu">
+            <a href="#project" class="button">Project</a>
+            <a href="#about" class="button">About me</a>
+            <a href="#contact" class="button">Contact me</a>
+          </div>
           <h1>Welcome to my Portfolio!</h1>
           <p>I'm</p>
           <p class="blur">Daniel Zhang</p> 
@@ -23,7 +28,7 @@
         </div>
       </header>
       <main>
-        <div class="project">
+        <div class="project" id="project">
           <h2 class="shadow">My projects</h2>
         </div>
         <div class="project-container">
@@ -31,10 +36,10 @@
             <img src="./assets/media/projectone.png" alt="project1 img">
             <h3>Shape Factory App</h3>
             <p>A javascript based website that generates different coloured shapes.</p>
-            <a href="https://danielzhang0714.github.io/shapefactory/" target="_blank">Learn More</a>
+            <a href="https://danielzhang0714.github.io/shapefactory/" target="_blank" class="button">Learn More</a>
           </div>
         </div>
-        <div class="aboutme">
+        <div class="aboutme" id="about">
           <h2 class="shadow">About Me</h2>
           <div class="aboutme-container">
             <div>
@@ -48,7 +53,7 @@
             </div>
             </div>
         </div>
-        <div class="contactme">
+        <div class="contactme" id="contact">
           <h2 class="shadow">Contact Me</h2>
           <form class="form">
           <input type="text" placeholder="Name">
